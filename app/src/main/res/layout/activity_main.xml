@@ -15,6 +15,40 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
+    <LinearLayout
+        android:id="@+id/LLO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@id/searchNews">
+
+        <Button
+            android:id="@+id/pais_USA"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#BF2525"
+
+            android:backgroundTint="#C52B2B"
+            android:text="USA" />
+        <Button
+            android:id="@+id/pais_JP"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="JP"/>
+        <Button
+            android:id="@+id/pais_MX"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="MX"/>
+    </LinearLayout>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvNews"
         android:layout_width="0dp"
@@ -22,6 +56,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchNews" />
+        app:layout_constraintTop_toBottomOf="@+id/LLO" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
