@@ -29,10 +29,8 @@
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:background="#BF2525"
-
-            android:backgroundTint="#C52B2B"
             android:text="USA" />
+
         <Button
             android:id="@+id/pais_JP"
             android:layout_width="wrap_content"
